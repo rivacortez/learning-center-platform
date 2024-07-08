@@ -1,54 +1,56 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-    <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
-        <Nullable>enable</Nullable>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <RootNamespace>learning_center_platformRI</RootNamespace>
-    </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-    <ItemGroup>
-        <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
-        <PackageReference Include="EntityFrameworkCore.CreatedUpdatedDate" Version="8.0.0" />
-        <PackageReference Include="Humanizer" Version="3.0.0-beta.54" />
-        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.6" />
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.6"/>
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0-preview.5.24306.3" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.6" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational.Design" Version="2.0.0-preview1-final" />
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0-preview.5.24306.7" />
-        <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="8.0.0-preview1" />
-        <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.5" />
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
-        <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.6.2" />
-    </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+		<PackageReference Include="EntityFrameworkCore.CreatedUpdatedDate" Version="8.0.0" />
+		<PackageReference Include="Humanizer" Version="3.0.0-beta.54" />
+		
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.6" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
+		
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.6" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational.Design" Version="2.0.0-preview1-final" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+		
+		<PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.2" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.6.2" />
 
-    <ItemGroup>
-      <Folder Include="Profiles\Application\Internal\CommandServices\" />
-      <Folder Include="Profiles\Application\Internal\QueryServices\" />
-      <Folder Include="Profiles\Domain\Model\Aggregates\" />
-      <Folder Include="Profiles\Domain\Model\Commands\" />
-      <Folder Include="Profiles\Domain\Model\Queries\" />
-      <Folder Include="Profiles\Domain\Model\ValueObjects\" />
-      <Folder Include="Profiles\Domain\Repositories\" />
-      <Folder Include="Profiles\Domain\Services\" />
-      <Folder Include="Profiles\Infrastructure\Persistence\EFC\Repositories\" />
-      <Folder Include="Profiles\Interfaces\ACL\Services\" />
-      <Folder Include="Profiles\Interfaces\REST\Resources\" />
-      <Folder Include="Profiles\Interfaces\REST\Transform\" />
-      <Folder Include="Publishing\Application\Internal\CommandServices\" />
-      <Folder Include="Publishing\Application\Internal\OutboundServices\ACL\" />
-      <Folder Include="Publishing\Application\Internal\QueryServices\" />
-      <Folder Include="Publishing\Domain\Model\Aggregates\" />
-      <Folder Include="Publishing\Domain\Model\Commands\" />
-      <Folder Include="Publishing\Domain\Model\Entities\" />
-      <Folder Include="Publishing\Domain\Model\Queries\" />
-      <Folder Include="Publishing\Domain\Model\ValueObjects\" />
-      <Folder Include="Publishing\Domain\Repositories\" />
-      <Folder Include="Publishing\Domain\Services\" />
-      <Folder Include="Publishing\Infastructure\Persistence\EFC\Repositories\" />
-      <Folder Include="Publishing\Interfaces\REST\Resources\" />
-      <Folder Include="Publishing\Interfaces\REST\Transform\" />
-    </ItemGroup>
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.6.0"/>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.6"/>
+		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.6.0"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="IAM\Application\Internal\CommandServices\" />
+		<Folder Include="IAM\Application\Internal\OutboundServices\" />
+		<Folder Include="IAM\Application\Internal\QueryServices\" />
+		<Folder Include="IAM\Domain\Model\Aggregates\" />
+		<Folder Include="IAM\Domain\Model\Commands\" />
+		<Folder Include="IAM\Domain\Model\Queries\" />
+		<Folder Include="IAM\Domain\Repositories\" />
+		<Folder Include="IAM\Domain\Services\" />
+		<Folder Include="IAM\Infrastructure\Hashing\BCrypt\Services\" />
+		<Folder Include="IAM\Infrastructure\Persistence\EFC\Repositories\" />
+		<Folder Include="IAM\Infrastructure\Pipeline\Middleware\Attributes\" />
+		<Folder Include="IAM\Infrastructure\Pipeline\Middleware\Components\" />
+		<Folder Include="IAM\Infrastructure\Pipeline\Middleware\Extensions\" />
+		<Folder Include="IAM\Infrastructure\Tokens\JWT\Configuration\" />
+		<Folder Include="IAM\Infrastructure\Tokens\JWT\Services\" />
+		<Folder Include="IAM\Interfaces\ACL\Services\" />
+		<Folder Include="IAM\Interfaces\REST\Resources\" />
+		<Folder Include="IAM\Interfaces\REST\Transform\" />
+		
+		<Folder Include="Shared\Domain\Repositories\" />
+		<Folder Include="Shared\Infrastructure\Persistence\EFC\Configuration\Extensions\" />
+		<Folder Include="Shared\Infrastructure\Persistence\EFC\Repositories\" />
+		<Folder Include="Shared\Interfaces\ASP\Configuration\Extensions\" />
+	</ItemGroup>
 
 </Project>
