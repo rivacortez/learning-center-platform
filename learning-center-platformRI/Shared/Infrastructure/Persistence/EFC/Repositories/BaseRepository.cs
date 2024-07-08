@@ -1,4 +1,6 @@
 ﻿using learning_center_platformRI.Shared.Domain.Repositories;
+using learning_center_platformRI.Shared.Infrastructure.Persistence.EFC.Configuration;
+using Microsoft.EntityFrameworkCore;
 
 namespace learning_center_platformRI.Shared.Infrastructure.Persistence.EFC.Repositories;
 
