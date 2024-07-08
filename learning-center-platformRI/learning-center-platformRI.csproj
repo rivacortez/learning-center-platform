@@ -24,9 +24,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="IAM\Infrastructure\Pipeline\Middleware\Attributes\" />
-      <Folder Include="IAM\Infrastructure\Pipeline\Middleware\Components\" />
-      <Folder Include="IAM\Infrastructure\Pipeline\Middleware\Extensions\" />
       <Folder Include="IAM\Infrastructure\Tokens\JWT\Configuration\" />
       <Folder Include="IAM\Infrastructure\Tokens\JWT\Services\" />
       <Folder Include="IAM\Interfaces\ACL\Services\" />
