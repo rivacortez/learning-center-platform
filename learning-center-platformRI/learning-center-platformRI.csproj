@@ -24,9 +24,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="IAM\Interfaces\ACL\Services\" />
-      <Folder Include="IAM\Interfaces\REST\Resources\" />
-      <Folder Include="IAM\Interfaces\REST\Transform\" />
       <Folder Include="Profiles\Application\Internal\CommandServices\" />
       <Folder Include="Profiles\Application\Internal\QueryServices\" />
       <Folder Include="Profiles\Domain\Model\Aggregates\" />
