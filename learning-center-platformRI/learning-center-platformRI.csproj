@@ -24,8 +24,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="IAM\Infrastructure\Tokens\JWT\Configuration\" />
-      <Folder Include="IAM\Infrastructure\Tokens\JWT\Services\" />
       <Folder Include="IAM\Interfaces\ACL\Services\" />
       <Folder Include="IAM\Interfaces\REST\Resources\" />
       <Folder Include="IAM\Interfaces\REST\Transform\" />
